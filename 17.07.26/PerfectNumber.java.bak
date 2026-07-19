@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class  PerfectNumber
+{	//Q. check if a given no is perfect nor or not 
+	//  number whose factor sum except itself is equal to the Number is Perfect number .
+	
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a no : ");
+		int num= sc.nextInt();
+		int div=1;
+		int sum=0;
+		while (div<num/2)
+		{
+			if(num%div==0){
+				
+				sum = sum + div;
+			}
+			div++;
+		}
+		
+		if (sum==num)
+		{
+			System.out.println("Given no is perfect ");
+		}
+		else System.out.println("Given no is NOT perfect ");
+	}
+}

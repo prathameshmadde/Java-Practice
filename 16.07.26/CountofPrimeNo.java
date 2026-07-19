@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class  CountPrimeNo
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a no :");
+		int num = sc.nextInt();
+		
+
+		int count=0;
+		while(num!=0)
+		{
+			int last=num%10;
+			
+			switch (last)
+			{
+			case 2,3,5,7:
+				{
+					count++;
+					break;
+				}
+			
+			}
+			
+			num/=10;
+		}
+		
+		System.out.println("Total no of Prime no : "+count);
+		
+	}
+}

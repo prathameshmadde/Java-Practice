@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Problem4 {
+    
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.println("Enter any Character :");
+        int ch =sc.next().charAt(0);
+
+        if(ch>='A'&ch<='Z'){
+            System.out.println("The character "+ch+" is UpperCase ");
+        }
+        if(ch>='a'&&ch<='z'){
+            System.out.println("The character "+ch+" is LowerCase ");
+        }
+        if(ch>'0'&&ch<='9'){
+            System.out.println("the character is digit ");
+        }
+        if((!(ch>='A'&&ch<='Z')||(ch>='a'&&ch<='z')||(ch>='0'&&ch<='9'))){
+            System.out.println("The character is special character ");
+        }        
+    }
+}

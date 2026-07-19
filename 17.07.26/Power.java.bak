@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class  Power 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a NO : ");
+		int num = sc.nextInt();
+		
+		System.out.println("Enter a Power : ");
+		int power = sc.nextInt();
+		int mul = 1;
+		int i =1;
+		while(i<=power){
+			mul = mul * power;
+			i++;
+			
+		}
+		
+		System.out.println(num+"^"+power+" = "+mul);
+		
+	}
+}

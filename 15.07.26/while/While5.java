@@ -1,0 +1,18 @@
+class While5 
+{
+	public static void main(String[] args) 
+	{	int start=2000;
+		int count=0;
+		while (start<=3000)
+		{
+			if((start%4==0 && start%100!=0)||(start%400==0))
+				{
+				System.out.println(start);
+				count++;
+				}
+				start++;
+		}
+		System.out.println("Total no of leap year :"count);
+	}
+}
+
