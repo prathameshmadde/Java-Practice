@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+class  DuckNumber
+{	//Q It is a number that contains at least one 0, but does not start with 0.
+	
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		String num = sc.next();
+		boolean ans =false;
+		
+/*		if (num.charAt(0)!='0')
+		{
+			for (int i=1; i<num.length(); i++ )
+			{
+				if (num.charAt(i)=='0')
+				{
+					ans = true;
+					break;
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		if (ans)
+		{
+			System.out.println("It is Duck Number .");
+		}
+		else{
+			System.out.println("It is not Duck Number .");
+		}
+		
+	
+	}
+}
+
+*/
+
+
+if (num.charAt(0)!='0')
+		{
+			for (int i=1; i<num.length(); i++ )
+			{
+				if (num.charAt(i)=='0')
+				{
+					System.out.println("It is Duck Number .");
+					return;
+				}
+			}
+			
+			System.out.println("It is not Duck Number .");
+			
+		}
+		
+else
+		{
+			System.out.println("It is not Duck Number .");
+		}
+		
+		
+		}
+		
+	
+		
+	
+	}
+
+
+
+
