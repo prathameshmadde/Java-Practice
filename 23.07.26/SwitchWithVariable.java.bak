@@ -15,6 +15,7 @@ class SwitchWithVariable
 		System.out.println("Number 1 = " + num1);
 		System.out.println("Number 2 = " + num2);
 		
-	
+		
+		
 	}
 }

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class ArmstrongNumberRange 
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a start Number : ");
+		int start = sc.nextInt();
+		System.out.println("Enter a end Number : ");
+		int end = sc.nextInt();
+		
+		for (int k = start ; k <=end ; k++ )
+			{
+			int num = k;
+			int count = 0;
+			
+			for (int i = num ; i>0  ; i/=10 )
+			{	count++;
+			}
+		
+			int sum = 0;
+		
+		
+			for (int i = num ; i >0 ; i/=10 )
+			{	
+			int product = 1;
+			int last = i % 10 ;
+			for (int j=1 ; j<=count ; j++ )
+			{	
+			product = product * last ;
+			}
+			sum = sum + product;
+			}
+		
+			if (sum == num)
+			{
+			System.out.println(num);
+			}
+		
+		}
+		
+	}
+}

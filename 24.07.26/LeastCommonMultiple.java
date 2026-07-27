@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class LeastCommonMultiple 
+{	//Q The LCM is the smallest positive number that is a multiple of both numbers.
+	
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Number 1 : ");
+		int num1 = sc.nextInt();
+		System.out.println("Enter a Number 2 : ");
+		int num2 = sc.nextInt();
+		int large = num1>num2 ? num1 : num2;
+		
+		for (int i =1 ;  ; i++ )
+		{
+			if( (large * i)%num1==0 &&  (large * i)%num2==0  )
+			{
+			System.out.println("Number : " + (large * i) );
+			break;
+			}
+		}
+		
+		
+	}
+}
