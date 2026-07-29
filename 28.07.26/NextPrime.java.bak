@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class  NextPrime
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Number : ");
+		int num = sc.nextInt();
+		int next = 0;
+		boolean flag = false;
+		while (	true )
+		{
+			num++;
+			if(isPrime(num)){
+				next=num;
+				flag=true;
+				break;
+			}
+		}
+		
+		if(flag){
+			System.out.println(next);
+		}
+			
+		
+	}
+}
