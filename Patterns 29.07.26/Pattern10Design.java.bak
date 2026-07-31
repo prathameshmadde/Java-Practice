@@ -17,7 +17,7 @@ class  Pattern10Design
 					j==n-1 && i<n/4 || j==n-1 && i>3*n/4 || i==n/8 && j==n/8 || i==7*n/8 && j==n/8 || 
 					i == 7*n/8 && j == 7*n/8 || j==7*n/8 && i==n/8 ||
 					i==n/2 && j == n/2 || i==j && i<n/4 && j<n/4 || i==j && i>3*n/4 && j>3*n/4 || 
-					i+j==n-1 && i<n/4 && j>3*n/4)
+					i=j==n-1 && i<n/4 && j>3*n/4)
 				{
 					System.out.print("*"+" ");
 				}
