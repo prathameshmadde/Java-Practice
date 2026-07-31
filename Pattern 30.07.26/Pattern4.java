@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class  Pattern4
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no of rows : ");
+		int n = sc.nextInt();
+		int num = ;
+		
+	'	int a = num;
+		
+		for (int i=1 ; i<=n ; i++ )
+		{
+			for (int j=1 ; j<=n ; j++)
+				
+			{
+				if(i%2!=0){
+					System.out.print(num++ +" "); //1234(5)
+					if(a<=10) System.out.print(" ");
+				}
+				else{
+					System.out.print(num-- + " ");
+					if(num<9) System.out.print(" ");
+				}
+				
+			
+				
+			}
+			
+			
+				
+				num = (i%2!=0)?num+(n-1):num+n+1;
+				System.out.println();
+			
+		}
+	}
+}
