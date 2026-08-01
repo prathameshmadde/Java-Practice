@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class  Patter11
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no of Rows : ");
+		int n = sc.nextInt();
+		int num = 1;
+		char ch = 'a';
+		
+		
+		for (int i= 1 ; i<= n ; i++ )
+		{	
+		
+			for (int j=1 ; j<=n ; j++ )
+			{		
+				if(j%2!=0){
+					System.out.print(num + " ");
+					num+=n;
+					
+				}
+				
+				else
+				{
+					System.out.print(ch + " ");
+					ch+=4;
+				}
+				
+				
+				
+			}
+			ch= (char)('a'+i);
+			num = 1 + i;			
+			System.out.println();
+		}
+		
+	}
+}
+
+/*
+
+1 a 5 e
+2 b 6 f
+3 c 7 g
+4 d 8 h
+
+*/

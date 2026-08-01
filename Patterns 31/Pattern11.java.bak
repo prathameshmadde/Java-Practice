@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 class  Pattern11{
 	public static void main(String[] args) 
-	{	Scanner sc = new Scanner(System.in);
-		System.out.println("Enter no of rows : ");
+	{	
 		int n = 5;
 		int a = n*2-1;
 		int b=1;

@@ -20,3 +20,14 @@ class  Pattern6{
 		}
 	}
 }
+
+/*
+
+Enter no of rows :
+4
+p o n m
+l k j i
+h g f e
+d c b a
+
+*/

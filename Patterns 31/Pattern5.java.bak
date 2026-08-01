@@ -13,7 +13,7 @@ class  Pattern5{
 				
 			{
 				System.out.print(num-- + " ");
-				if(num<10)System.out.print(" ");
+				if(num<9)System.out.print(" ");
 			}
 			System.out.println();
 		}
