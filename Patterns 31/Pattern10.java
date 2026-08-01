@@ -15,7 +15,9 @@ class  Pattern10{
 				
 			{
 				System.out.print(a + " ");
+				if(num<10)System.out.print(" ");
 				a+=3;
+				
 				
 			}
 			System.out.println();
