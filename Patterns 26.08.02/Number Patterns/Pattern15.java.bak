@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Pattern15 
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("ENter no of Rows : ");
+		int n = sc.nextInt();
+		char ch = 'a';
+		int num	=1;
+		
+		for (int i = 1;i<=n ;i++ )
+		{
+			for (int j=1;j<=n ; j++)
+			{
+				if(j%2!=0){ 
+					System.out.print(num + " ");
+					num=num+4;
+					}
+				else{
+					System.out.print(ch + " ");
+					ch+=4;
+				}	
+				
+			}
+			ch=(char)('a'+i);
+			num=1+i;
+			System.out.println();
+		}
+	}
+}

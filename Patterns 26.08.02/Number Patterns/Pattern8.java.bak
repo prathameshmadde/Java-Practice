@@ -13,7 +13,7 @@ class Pattern8
 			for (int j=1;j<=n ;j++ )
 			{
 				System.out.print(a+ " ");
-				if(num<10) System.out.print(" ");
+				if(a<10) System.out.print(" ");
 				a=a+n;
 			}
 			System.out.println();
