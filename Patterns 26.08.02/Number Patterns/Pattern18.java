@@ -5,15 +5,15 @@ class Pattern17
 	{	Scanner sc = new Scanner(System.in);
 		System.out.println("Enter no of Rows : ");
 		int n = sc.nextInt();
-		int num=n*n/2;
+		int num=1;
 		char ch = (char)('a'+n*n/2-1);
 		
 		for (int i =1;i<=n ;i++ )
 		{
 			for (int j=1;j<=n ;j++ )
 			{
-				if(j%2!=0){
-					System.out.print(num-- + " ");
+				if(i%2!=0){
+					System.out.print(num++ + " ");
 					if(num<9){ System.out.print(" "); }
 				}
 				else{
@@ -28,24 +28,27 @@ class Pattern17
 /*
 Pattern (n = 4)
 
-8  h  7  g
-6  f  5  e
-4  d  3  c
-2  b  1  a
+1  2  3  4
+h  g  f  e
+5  6  7  8
+d  c  b  a
 
 Logic
 
 Start:
-num = n * n / 2
+num = 1
 ch = 'a' + (n * n / 2) - 1
 
-Odd Column  -> Print num--
-Even Column -> Print ch--
+Odd Row  -> Print numbers.
+            num++
+
+Even Row -> Print characters.
+            ch--
 
 Condition
 
-if (j % 2 != 0)
-    print(num--);
+if (i % 2 != 0)
+    print(num++);
 else
     print(ch--);
 */
