@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Pattern7
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no of Rows : ");
+        int n = sc.nextInt();
+		int a=n*n/2-1;
+		
+		/*other method tried but did not work for odd numbers
+		if(n%2==0){
+			 a = n*n/2-1;
+		}
+		else{
+			a= n* (n-1)/2;
+		}
+		*/
+		
+		int b = 1;
+		int num =1;
+		
+        for (int i=1;i<=n ;i++ )
+			{ num=i;
+				for (int j=1;j<=n ;j++ )
+				{
+					if (j%2!=0)
+					{
+						System.out.print(num  +" ");
+						if(num<10) System.out.print(" ");
+						num+=a;
+					}
+					else
+						{
+							System.out.print(num  + " ");
+							if(num<10) System.out.print(" ");
+							num+=b;
+						}
+					
+				}
+				a-=n/2;
+				b+=n/2;
+				System.out.println();
+			}
+    }
+}
