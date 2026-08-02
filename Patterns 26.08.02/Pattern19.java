@@ -24,6 +24,38 @@ class Pattern19
 			System.out.println();
 		}
 
-        // pattern logic here
+       
     }
 }
+
+
+/*
+Pattern (n = 10)
+
+* * * * * * * * * * 
+*         *       * 
+*         *       * 
+*         *       * 
+*         *       * 
+*         *       * 
+*         *       * 
+*         *       * 
+*         *       * 
+* * * * * * * * * * 
+
+Logic
+
+Top Row        -> i == 0
+Bottom Row     -> i == n - 1
+Left Column    -> j == 0
+Middle Column  -> j == n / 2
+Right Column   -> j == n - 1
+
+Condition
+
+i == 0 ||
+i == n - 1 ||
+j == 0 ||
+j == n / 2 ||
+j == n - 1
+*/

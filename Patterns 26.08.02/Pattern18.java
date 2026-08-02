@@ -26,3 +26,38 @@ class Pattern18
     }
 }
 
+/*
+Pattern (n = 10)
+
+* * * * * * * * * * * * * * * 
+*   * *                 *   * 
+*   *   *               *   * 
+*   *     *             *   * 
+*   *       *           *   * 
+*   *         *         *   * 
+*   *           *       *   * 
+*   *             *     *   * 
+*   *               *   *   * 
+*   *                 * *   * 
+* * * * * * * * * * * * * * * 
+
+Logic
+
+Top Row          -> i == 0
+Bottom Row       -> i == n
+1st Left Column  -> j == -2
+2nd Left Column  -> j == 0
+Main Diagonal    -> i == j
+1st Right Column -> j == n
+2nd Right Column -> j == n + 2
+
+Condition
+
+i == 0 ||
+i == n ||
+j == -2 ||
+j == 0 ||
+i == j ||
+j == n ||
+j == n + 2
+*/
