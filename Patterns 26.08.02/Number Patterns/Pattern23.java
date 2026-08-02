@@ -25,3 +25,34 @@ class  Pattern23
 		}
 	}
 }
+
+/*
+Pattern (n = 4)
+
+1 a b c
+2 3 d e
+4 5 6 f
+7 8 9 10
+
+Logic
+
+Start:
+num = 1
+ch = 'a'
+
+First Loop (j <= i)
+-> Print numbers.
+-> num++
+
+Second Loop (j = i+1 to n)
+-> Print characters.
+-> ch++
+
+Condition
+
+First Loop:
+print(num++);
+
+Second Loop:
+print(ch++);
+*/
