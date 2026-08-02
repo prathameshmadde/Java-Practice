@@ -8,11 +8,11 @@ class Pattern15
         System.out.println("Enter no of Rows : ");
         int n = sc.nextInt();
 
-        for (int i=1 ;i<=n ; i++ )
+        for (int i=-2 ;i<=n+2 ; i++ )
         {
-			for (int j=1 ; j<=n ; j++ )
+			for (int j=0 ; j<=n ; j++ )
 			{
-				if(i==1 || j==1 || i==n || j==n || j==3 || j==n-2)
+				if(i==-2 || i==0 || i==n+2 || i==n || j==0 || j==n || i==j  )
 				{
 					System.out.print("* ");
 				}
@@ -29,3 +29,43 @@ class Pattern15
 		
     }
 }
+
+/*
+Pattern (n = 10)
+
+* * * * * * * * * * * 
+*                   * 
+* * * * * * * * * * * 
+* *                 * 
+*   *               * 
+*     *             * 
+*       *           * 
+*         *         * 
+*           *       * 
+*             *     * 
+*               *   * 
+*                 * * 
+* * * * * * * * * * * 
+*                   * 
+* * * * * * * * * * * 
+
+Logic
+
+Top Row          -> i == -2
+2nd Top Row      -> i == 0
+Bottom Row       -> i == n
+2nd Bottom Row   -> i == n + 2
+Left Column      -> j == 0
+Right Column     -> j == n
+Main Diagonal    -> i == j
+
+Condition
+
+i == -2 ||
+i == 0 ||
+i == n ||
+i == n + 2 ||
+j == 0 ||
+j == n ||
+i == j
+*/
