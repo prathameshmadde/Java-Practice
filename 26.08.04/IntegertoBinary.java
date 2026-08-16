@@ -1,0 +1,24 @@
+class IntegertoBinary
+{
+    public static void main(String[] args)
+    {
+        int num = 13;
+
+        if (num == 0)
+        {
+            System.out.println(0);
+            return;
+        }
+
+        String binary = "";
+
+        while (num != 0)
+        {
+            int rem = num % 2;
+            binary = rem + binary;
+            num = num / 2;
+        }
+
+        System.out.println(binary);
+    }
+}

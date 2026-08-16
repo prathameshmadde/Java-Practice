@@ -14,13 +14,39 @@ class  Pattern5
 				if(i==1 || j==1  || i==n || j==n || i+j== n +1 || i==j){
 					System.out.print("* ");
 				}
-				else
-				{
-					System.out.print("  ");
-				}
+				
 				
 			}
 			System.out.println();
 		}
 	}
 }
+
+/*
+Pattern (n = 5)
+
+* * * * *
+* *   * *
+*   *   *
+* *   * *
+* * * * *
+
+Logic
+
+Top Row         -> i == 1
+Bottom Row      -> i == n
+Left Column     -> j == 1
+Right Column    -> j == n
+Main Diagonal   -> i == j
+Anti Diagonal   -> i + j == n + 1
+
+Condition
+
+i == 1 ||
+i == n ||
+j == 1 ||
+j == n ||
+i == j ||
+i + j == n + 1
+*/
+

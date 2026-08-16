@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class PowerExample 
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("ENter no :");
+		int num= sc.nextInt();
+		System.out.println("Enter Poswer: ");
+		int pow = sc.nextInt();
+		
+		System.out.print(pow(num, pow));
+		
+	}
+	
+	public static double pow (double num ,double pow){
+		
+		double op =1;
+		if(pow<0){
+			power*=-1;
+			num=1/num;
+			
+		}
+		for(int i=1;i<=pow;i++){
+			op*=num;
+		}
+		
+		return op;
+	}
+}
