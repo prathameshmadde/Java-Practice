@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class  ToUpperClass
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("ENter a String :");
+		String ch = sc.next();
+		
+		System.out.print(Uppercase(ch));
+		
+	}
+	
+	public static String Uppercase(String name){
+		
+		String str ="";
+		for (int i =0 ; i< name.length() ; i++ )
+		{
+			char ch = name.charAt(i);
+			
+			if(ch>='a' && ch <
+				
+			
+			= 'z'){
+				 ch = (char)(ch-32);
+			}
+			str = str + ch ;
+			
+		}
+		
+		return str;
+	}
+}
