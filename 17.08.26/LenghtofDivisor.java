@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class LenghtofDivisor  
+{
+	public static void main(String[] args) 
+	{	Scanner  sc = new Scanner(System.in);
+		System.out.println("Enter a Number : ");
+		int num = sc.nextInt();
+		
+		System.out.println("Length of a NUmber : "+ length(num));
+	}
+	
+	public static int length(int num){
+		int count=1;
+		for (int i = num ;i>9 ;i/=10 )
+		{
+			count = count * 10;
+		}
+		return count;
+	}
+}
