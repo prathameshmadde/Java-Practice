@@ -8,7 +8,7 @@ class TwistedPrime
 		int num = sc.nextInt();
 		
 			
-		if(isPrime(num) && isprime(reversNum(num))){
+		if(isPrime(num) && isPrime(reversNum(num))){
 			System.out.println("It is Twisted Prime .");
 		}
 		else {

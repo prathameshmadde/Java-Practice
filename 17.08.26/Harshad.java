@@ -1,0 +1,23 @@
+class Harshad
+{
+	public static void main(String[] args) 
+	{	int num = 81;
+		int sum = 0;
+		int temp = num;
+		while (num!=0)
+		{
+			int last = num%10;
+			sum = sum + last ;
+			num/=10;
+		}
+		if (temp%sum==0)
+		{
+		System.out.println("It is Harshd no ");
+		}else{
+			
+		System.out.println("It is not Harshad no ");
+		}
+		
+		 
+	}
+}

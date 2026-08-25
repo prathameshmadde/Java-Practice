@@ -9,10 +9,10 @@ class PowerofNum
 		System.out.println("Enter a Power : ");
 		int pow = sc.nextInt();
 		
-		System.out.println("Power of a Number : "+powofNum(num,pow));
+		System.out.println("Power of a Number : "+PowofNum(num,pow));
 	}
 	
-	public static int powofNum(int num , int pow ){
+	public static int PowofNum(int num , int pow ){
 		int mul =1;
 		for(int i =1; i<=pow; i++){
 			mul = mul * num;

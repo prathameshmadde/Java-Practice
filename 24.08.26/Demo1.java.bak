@@ -1,0 +1,24 @@
+class Demo1{
+	static String str = "staic var";
+	static {
+		System.out.println("static block");
+	}	
+	public static void m1(){
+		System.out.println("m1() static method ourterclass");
+	}
+	public static void main(String [] args){
+		System.out.println("main()");
+		InnerCalss.m3();
+	}
+	static class InnerClass{
+		public static void m2(){
+			System.out.println("m2 () form INnnerClass ");
+		}
+		public static void m3(){
+			System.out.println("m3 from InnerClass");
+			m2();
+			m1();
+			System.out.println(str);
+		}
+	}	
+}

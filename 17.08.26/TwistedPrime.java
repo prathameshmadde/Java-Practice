@@ -7,16 +7,13 @@ class TwistedPrime
 		System.out.println("ENter a Number : ");
 		int num = sc.nextInt();
 		
-			
 		if(isPrime(num) && isPrime(reversNum(num))){
 			System.out.println("It is Twisted Prime .");
 		}
 		else {
 			System.out.println("It is not Twisted Prime .");
-		}
-				
+		}		
 	}
-	
 	public static boolean isPrime(int num ){
 		if(num<=1){return false ;}
 		
@@ -26,11 +23,9 @@ class TwistedPrime
 					return false;
 				}
 			}
-			
 			return true;
 		}
 	}
-	
 	public static int reversNum(int number){
 		int sum =0;
 		for (int i = number ; i !=0 ; i/=10 )
