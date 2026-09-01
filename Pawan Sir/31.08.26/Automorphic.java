@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class  Automorphic
+{
+	public static void main(String[] args) 
+	{	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number = ");
+		int num = sc.nextInt();//25
+		int square = num * num ;
+		int count = 0;
+		int rev =1;
+		
+		for (int i=num;i>0 ;i/=10 )
+		{
+			count++;
+		}
+		
+		for (int i=1;i<=count ; i++)
+		{
+			rev=rev*10;
+		}
+		
+		int last = square % rev;
+		
+		if(num == last){
+			System.out.println(num + " is Automorphic Number .");
+		}else{
+			System.out.println(num + " is not Automorphic Number .");
+		}
+		
+		
+		
+	}
+}
